@@ -437,4 +437,138 @@
     "node_modules/postcss": {
       "version": "8.4.45",
       "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.45.tgz",
-      "integrity": "sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1
+      "integrity": "sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1Q==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/postcss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "dependencies": {
+        "nanoid": "^3.3.7",
+        "picocolors": "^1.0.1",
+        "source-map-js": "^1.2.0"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    "node_modules/rollup": {
+      "version": "4.22.4",
+      "resolved": "https://registry.npmjs.org/rollup/-/rollup-4.22.4.tgz",
+      "integrity": "sha512-vD8HJ5raRcWOyymsR6Z3o6+RzfKuT81F1yf4g5r4Y6gCiCq8cPFwIbKGP9z3aIeJxKp9GvHt+L8B1s7vZUB8eA==",
+      "dev": true,
+      "dependencies": {
+        "@types/estree": "1.0.5"
+      },
+      "bin": {
+        "rollup": "dist/bin/rollup"
+      },
+      "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=8.0.0"
+      },
+      "optionalDependencies": {
+        "@rollup/rollup-android-arm-eabi": "4.22.4",
+        "@rollup/rollup-android-arm64": "4.22.4",
+        "@rollup/rollup-darwin-arm64": "4.22.4",
+        "@rollup/rollup-darwin-x64": "4.22.4",
+        "@rollup/rollup-linux-arm-gnueabihf": "4.22.4",
+        "@rollup/rollup-linux-arm-musleabihf": "4.22.4",
+        "@rollup/rollup-linux-arm64-gnu": "4.22.4",
+        "@rollup/rollup-linux-arm64-musl": "4.22.4",
+        "@rollup/rollup-linux-powerpc64le-gnu": "4.22.4",
+        "@rollup/rollup-linux-riscv64-gnu": "4.22.4",
+        "@rollup/rollup-linux-s390x-gnu": "4.22.4",
+        "@rollup/rollup-linux-x64-gnu": "4.22.4",
+        "@rollup/rollup-linux-x64-musl": "4.22.4",
+        "@rollup/rollup-win32-arm64-msvc": "4.22.4",
+        "@rollup/rollup-win32-ia32-msvc": "4.22.4",
+        "@rollup/rollup-win32-x64-msvc": "4.22.4",
+        "fsevents": "~2.3.2"
+      }
+    },
+    "node_modules/source-map-js": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.0.tgz",
+      "integrity": "sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu9QNBg==",
+      "dev": true,
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/three": {
+      "version": "0.160.1",
+      "resolved": "https://registry.npmjs.org/three/-/three-0.160.1.tgz",
+      "integrity": "sha512-Bgl2wPJypDOZ1stAxwfWAcJ0WQf7QzlptsxkjYiURPz+n5k4RBDLsq+6f9Y75TYxn6aHLcWz+JNmwTOXWrQTBQ=="
+    },
+    "node_modules/vite": {
+      "version": "5.4.2",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-5.4.2.tgz",
+      "integrity": "sha512-dDrQTRHp5C1fTFzcSaMxjk6vdpKvT+2/mIdE07Gw2ykehT49O0z/VHS3zZ8iV/Gh8SJJL23PwCkda7pGn4rnjA==",
+      "dev": true,
+      "dependencies": {
+        "esbuild": "^0.21.3",
+        "postcss": "^8.4.41",
+        "rollup": "^4.20.0"
+      },
+      "bin": {
+        "vite": "bin/vite.js"
+      },
+      "engines": {
+        "node": "^18.0.0 || >=20.0.0"
+      },
+      "funding": {
+        "url": "https://github.com/vitejs/vite?sponsor=1"
+      },
+      "optionalDependencies": {
+        "fsevents": "~2.3.3"
+      },
+      "peerDependencies": {
+        "@types/node": "^18.0.0 || >=20.0.0",
+        "less": "*",
+        "lightningcss": "^1.21.0",
+        "sass": "*",
+        "sass-embedded": "*",
+        "stylus": "*",
+        "sugarss": "*",
+        "terser": "^5.4.0"
+      },
+      "peerDependenciesMeta": {
+        "@types/node": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "lightningcss": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        }
+      }
+    }
+  }
+}
