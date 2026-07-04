@@ -1,0 +1,27 @@
+{
+  "name": "cross-window-3d-sync",
+  "version": "1.0.0",
+  "description": "Interactive 3D web experience that synchronizes across multiple browser windows in real-time",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "broadcast-channel",
+    "cross-window",
+    "3d",
+    "real-time-sync"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
