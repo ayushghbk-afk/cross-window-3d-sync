@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Window 3D Sync</title>
+  <meta name="description" content="Interactive 3D web experience that synchronizes across multiple browser windows in real-time using WebGL and Three.js">
+  <meta name="theme-color" content="#0a0a1a">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      overflow: hidden;
+      background: #000;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    canvas {
+      display: block;
+    }
+    
+    .overlay {
+      position: fixed;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 14px;
+      font-weight: 500;
+      background: rgba(10, 10, 30, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 12px 20px;
+      border-radius: 16px;
+      pointer-events: none;
+      z-index: 100;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+    
+    #window-id {
+      top: 20px;
+      left: 20px;
+    }
+    
+    #connection-count {
+      top: 20px;
+      right: 20px;
+    }
+    
+    #instructions {
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 13px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    
+    @media (max-width: 768px) {
+      .overlay {
+        font-size: 12px;
+        padding: 10px 16px;
+      }
+      
+      #instructions {
+        font-size: 11px;
+        white-space: normal;
+        width: 90%;
+        bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="window-id" class="overlay">Window: Initializing...</div>
+  <div id="connection-count" class="overlay">Connected: 1</div>
+  <div id="instructions" class="overlay">Open multiple windows • Move & resize for 3D sync</div>
+  
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
